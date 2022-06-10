@@ -400,14 +400,534 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaea5f7a6757151419faac6fcfcf9e25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hwatoos: []
-  usedNums: 
+  hwatooDeck:
+  - number: 1
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 2
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 3
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 4
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 5
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 6
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 7
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 8
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 9
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 10
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 1
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 2
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 3
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 4
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 5
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 6
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 7
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 8
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 9
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 10
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 1
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 2
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 3
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 4
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 5
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 6
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 7
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 8
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 9
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 10
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 1
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 2
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 3
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 4
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 5
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 6
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 7
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 8
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 9
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 10
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 1
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 2
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 3
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 4
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 5
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 6
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 7
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 8
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 9
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 10
+    isGwang: 0
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 1
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 3
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 8
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 1
+  - number: 1
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 3
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 8
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 2
+  - number: 1
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 3
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 8
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 1
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 3
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 8
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 4
+  - number: 1
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 3
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 8
+    isGwang: 1
+    yinAndYang: 1
+    fiveElements: 5
+  - number: 1
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 2
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 3
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 4
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 5
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 6
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 7
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 8
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 9
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 10
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 1
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 2
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 3
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 4
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 5
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 6
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 7
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 8
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 9
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 10
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 1
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 2
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 3
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 4
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 5
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 6
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 7
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 8
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 9
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 10
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 1
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 2
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 3
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 4
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 5
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 6
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 7
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 8
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 9
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 10
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 1
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 2
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 3
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 4
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 5
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 6
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 7
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 8
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 9
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 10
+    isGwang: 0
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 1
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 3
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 8
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 1
+  - number: 1
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 3
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 8
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 2
+  - number: 1
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 3
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 8
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 3
+  - number: 1
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 3
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 8
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 4
+  - number: 1
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 3
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 5
+  - number: 8
+    isGwang: 1
+    yinAndYang: 2
+    fiveElements: 5
+  usedNums: 2b00000016000000
   selectedHwatoos:
-  - number: 0
+  - number: 3
     isGwang: 0
-    yinAndYang: 0
-    fiveElements: 0
-  - number: 0
+    yinAndYang: 1
+    fiveElements: 3
+  - number: 4
     isGwang: 0
-    yinAndYang: 0
-    fiveElements: 0
+    yinAndYang: 1
+    fiveElements: 5

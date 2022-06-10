@@ -2,89 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
-/// <summary>
-/// Ranks Of Hands
-/// </summary>
-[System.Serializable]
-public enum RanksOfHands
-{
-    NineFour = -4,
-    MeongteongguriNineFour = -3,
-    TtaengCatcher = -2,
-    Amhaengeosa = -1,
-    None,
-    Mangtong,
-    OneKkeut,
-    TwoKkeut,
-    ThreeKkeut,
-    FourKkeut,
-    FiveKkeut,
-    SixKkeut,
-    SevenKkeut,
-    EightKkeut,
-    GaBo,
-    SeRyuk,
-    JangSa,
-    JangPping,
-    GuPping,
-    Viper,
-    Alli,
-    PpingTtaeng,
-    TwoTtaeng,
-    ThreeTtaeng,
-    FourTtaeng,
-    FiveTtaeng,
-    SixTtaeng,
-    SevenTtaeng,
-    EightTtaeng,
-    NineTtaeng,
-    JangTtaeng,
-    OneThreeGwangTtaeng,
-    OneEgihtGwangTtaeng,
-    ThreeEightGwangTtaeng
+using System;
+using Random = UnityEngine.Random;
 
-}
-/// <summary>
-/// Card Property
-/// </summary>
-[System.Serializable]
-public enum YinAndYang
-{
-    None,
-    Yin,
-    Yang
-}
-/// <summary>
-/// Card Element
-/// </summary>
-public enum FiveElements
-{
-    None,
-    Wood,
-    Fire,
-    Earth,
-    Metal,
-    Water
-}
-/// <summary>
-/// Property of Hwatoo
-/// </summary>
-[System.Serializable]
-public class Hwatoo
-{
-    [SerializeField] private int number;
-    [SerializeField] bool isGwang = false;
-    [SerializeField] YinAndYang yinAndYang = YinAndYang.None;
-    [SerializeField] FiveElements fiveElements = FiveElements.None;
 
-    public Hwatoo(int _number, bool _isGwang, YinAndYang _yinAndYang, FiveElements _fiveElements)
-    {
-        number = _number;
-        isGwang = _isGwang;
-        yinAndYang = _yinAndYang;
-        fiveElements = _fiveElements;
-    }
-}
 public class Seotda : MonoBehaviour
 {
     public List<Hwatoo> hwatooDeck;
@@ -171,6 +92,8 @@ public class Seotda : MonoBehaviour
         hwatooDeck.Add(new Hwatoo(1, true, YinAndYang.Yang, FiveElements.Water));
         hwatooDeck.Add(new Hwatoo(3, true, YinAndYang.Yang, FiveElements.Water));
         hwatooDeck.Add(new Hwatoo(8, true, YinAndYang.Yang, FiveElements.Water));
+        selectedHwatoos = new Hwatoo[2];
+        usedNums.Clear();
     }
     /// <summary>
     /// Select Hwatoos(First)
@@ -181,6 +104,11 @@ public class Seotda : MonoBehaviour
         usedNums.Clear();
         selectedHwatoos[0] = hwatooDeck[SelectNum()];
         selectedHwatoos[1] = hwatooDeck[SelectNum()];
+        Array.Sort(selectedHwatoos, (a, b) => (a.Number < b.Number) ? -1 : 1);
+        for (int i = 0; i < 2; i++)
+        {
+            Debug.Log(selectedHwatoos[i].Number);
+        }
     }
     /// <summary>
     /// Change selected Hwatoo
@@ -190,6 +118,7 @@ public class Seotda : MonoBehaviour
     public void ResetHwatoo(int num)
     {
         selectedHwatoos[num] = hwatooDeck[SelectNum()];
+        Array.Sort(selectedHwatoos, (a, b) => (a.Number < b.Number) ? -1 : 1);
     }
     /// <summary>
     /// Select number which is not included in usedNums.
@@ -206,5 +135,132 @@ public class Seotda : MonoBehaviour
         }
         usedNums.Add(result);
         return result;
+    }
+    /// <summary>
+    /// Assess Cards...
+    /// </summary>
+    [Button]
+    public void Assessment()
+    {
+        if (selectedHwatoos[0].Number == 3 && selectedHwatoos[0].IsGwang && selectedHwatoos[1].Number == 8 && selectedHwatoos[1].IsGwang)
+        {
+            Debug.Log("ThreeEightGwangTtaeng");
+        }
+        else if (selectedHwatoos[0].Number == 1 && selectedHwatoos[0].IsGwang && selectedHwatoos[1].Number == 8 && selectedHwatoos[1].IsGwang)
+        {
+            Debug.Log("OneEightGwangTtaeng");
+        }
+        else if (selectedHwatoos[0].Number == 1 && selectedHwatoos[0].IsGwang && selectedHwatoos[1].Number == 3 && selectedHwatoos[1].IsGwang)
+        {
+            Debug.Log("OneThreeGwangTtaeng");
+        }
+        else if (selectedHwatoos[0].Number == selectedHwatoos[1].Number)
+        {
+            int ttaeng = selectedHwatoos[0].Number;
+            if (ttaeng == 10)
+            {
+                Debug.Log("JangTtaeng");
+            }
+            else if (ttaeng == 9)
+            {
+                Debug.Log("NineTtaeng");
+            }
+            else if (ttaeng == 8)
+            {
+                Debug.Log("EightTtaeng");
+            }
+            else if (ttaeng == 7)
+            {
+                Debug.Log("SevenTtaeng");
+            }
+            else if (ttaeng == 6)
+            {
+                Debug.Log("SixTtaeng");
+            }
+            else if (ttaeng == 5)
+            {
+                Debug.Log("FiveTtaeng");
+            }
+            else if (ttaeng == 4)
+            {
+                Debug.Log("FourTtaeng");
+            }
+            else if (ttaeng == 3)
+            {
+                Debug.Log("ThreeTtaeng");
+            }
+            else if (ttaeng == 2)
+            {
+                Debug.Log("TwoTtaeng");
+            }
+            else if (ttaeng == 1)
+            {
+                Debug.Log("OneTtaeng");
+            }
+        }
+        else if (selectedHwatoos[0].Number == 1 && selectedHwatoos[1].Number == 2)
+        {
+            Debug.Log("Alli");
+        }
+        else if (selectedHwatoos[0].Number == 1 && selectedHwatoos[1].Number == 4)
+        {
+            Debug.Log("Viper");
+        }
+        else if (selectedHwatoos[0].Number == 1 && selectedHwatoos[1].Number == 9)
+        {
+            Debug.Log("GuPping");
+        }
+        else if (selectedHwatoos[0].Number == 1 && selectedHwatoos[1].Number == 10)
+        {
+            Debug.Log("JangPping");
+        }
+        else if (selectedHwatoos[0].Number == 4 && selectedHwatoos[1].Number == 6)
+        {
+            Debug.Log("SeRyuk");
+        }
+        else
+        {
+            int kkeut = (selectedHwatoos[0].Number + selectedHwatoos[1].Number) % 10;
+            if (kkeut == 9)
+            {
+                Debug.Log("Gabo");
+            }
+            else if (kkeut == 8)
+            {
+                Debug.Log("EightKkeut");
+            }
+            else if (kkeut == 7)
+            {
+                Debug.Log("SevenKkeut");
+            }
+            else if (kkeut == 6)
+            {
+                Debug.Log("SixKkeut");
+            }
+            else if (kkeut == 5)
+            {
+                Debug.Log("FiveKkeut");
+            }
+            else if (kkeut == 4)
+            {
+                Debug.Log("FourKkeut");
+            }
+            else if (kkeut == 3)
+            {
+                Debug.Log("ThreeKkeut");
+            }
+            else if (kkeut == 2)
+            {
+                Debug.Log("TwoKkeut");
+            }
+            else if (kkeut == 1)
+            {
+                Debug.Log("OneKkeut");
+            }
+            else if (kkeut == 0)
+            {
+                Debug.Log("MangTong");
+            }
+        }
     }
 }
